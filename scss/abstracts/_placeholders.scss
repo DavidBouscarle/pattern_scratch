@@ -1,0 +1,23 @@
+// PLACEHOLDERS FLEX
+
+%flex--row--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex--column--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// PLACEHOLDER ABSOLUTE
+
+%absolute--center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
