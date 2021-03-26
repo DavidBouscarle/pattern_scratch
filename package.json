@@ -1,0 +1,25 @@
+{
+  "name": "pattern_scratch",
+  "version": "1.0.0",
+  "description": "A simple architecture used the 7-1 pattern / A good start from scratch",
+  "main": "./public/app/index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./public/style/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikingsurfeur/pattern_scratch.git"
+  },
+  "keywords": [
+    "pattern",
+    "7-1",
+    "front-end",
+    "scss"
+  ],
+  "author": "David Bouscarle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikingsurfeur/pattern_scratch/issues"
+  },
+  "homepage": "https://github.com/vikingsurfeur/pattern_scratch#readme"
+}
