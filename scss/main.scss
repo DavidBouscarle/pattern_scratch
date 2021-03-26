@@ -7,9 +7,10 @@
 
 // USE BASE
 
-@use './base/animations';
+@use './base/normalize';
 @use './base/reset';
 @use './base/typography';
+@use './base/animations';
 
 // USE COMPONENTS
 
