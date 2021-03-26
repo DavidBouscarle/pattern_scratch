@@ -1,0 +1,11 @@
+.header {
+    @extend %row;
+
+    &__logo {
+        @extend %col--2;
+    }
+
+    &__nav {
+        @extend %col--10;
+    }
+}

@@ -1,32 +1,37 @@
 // USE ABSTRACTS
 
-@use './abstracts/functions';
-@use './abstracts/mixins';
-@use './abstracts/placeholders';
-@use './abstracts/grid_system';
-@use './abstracts/variables';
+@import
+  './abstracts/variables',
+  './abstracts/functions',
+  './abstracts/mixins',
+  './abstracts/placeholders',
+  './abstracts/grid_system';
 
 // USE BASE
 
-@use './base/normalize';
-@use './base/reset';
-@use './base/typography';
-@use './base/animations';
+@import 
+    './base/normalize',
+    './base/reset',
+    './base/typography',
+    './base/animations';
 
 // USE COMPONENTS
 
-@use './components/buttons';
+@import 
+    './components/buttons';
 
 // USE LAYOUTS
 
-@use './layout/header';
-@use './layout/footer';
-@use './layout/forms';
-@use './layout/grid';
+@import
+    './layout/header',
+    './layout/grid',
+    './layout/forms',
+    './layout/footer';
 
 // USE PAGES
 
-@use './pages/home';
+@import 
+    './pages/home';
 
 // USE THEMES
 
