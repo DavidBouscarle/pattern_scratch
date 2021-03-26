@@ -12,11 +12,11 @@ $columns: 12;
 
 @for $i from 1 through $columns {
     %col--#{$i} {
-        -webkit-box-flex: 0 0 calc(100% / $columns * $i);
-        -ms-flex: 0 0 calc(100% / $columns * $i)px;
-        flex: 0 0 calc(100% / $columns * $i);
+        -webkit-box-flex: 0 0 100% / $columns * $i;
+        -ms-flex: 0 0 100% / $columns * $i px;
+        flex: 0 0 100% / $columns * $i;
     }
     %col--offset--#{$i} {
-        margin-left: calc(100% / $columns * $i);
+        margin-left: 100% / $columns * $i;
     }
 }
