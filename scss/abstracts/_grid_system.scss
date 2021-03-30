@@ -1,6 +1,6 @@
 // GRID SYSTEM
 
-%row {
+.row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11,12 +11,11 @@
 $columns: 12;
 
 @for $i from 1 through $columns {
-    %col--#{$i} {
+    .col--#{$i} {
         -webkit-box-flex: 0 0 100% / $columns * $i;
         -ms-flex: 0 0 100% / $columns * $i px;
         flex: 0 0 100% / $columns * $i;
     }
-    %col--offset--#{$i} {
+    .col--offset--#{$i} {
         margin-left: 100% / $columns * $i;
     }
-}
