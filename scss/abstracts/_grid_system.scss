@@ -19,3 +19,4 @@ $columns: 12;
     .col--offset--#{$i} {
         margin-left: 100% / $columns * $i;
     }
+}
