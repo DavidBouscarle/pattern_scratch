@@ -1,0 +1,43 @@
+/* Colors */
+
+$colors: (
+    'white': $white,
+    'black': $black,
+    // Put your colors here
+);
+
+@each $color, $val in $colors {
+    .bg-#{$color} {
+        background-color: $color;
+    }
+
+    .text-#{$color} {
+        color: $color;
+    }
+
+    .border-#{$color} {
+        border-color: $color;
+    }
+
+    // Light variations
+    @for $i from 1 to 9 {
+        .text-light-#{$color}-#{$i} {
+            color: mix(white, $val, $i * 10);
+        }
+
+        .bg-light-#{$color}-#{$i} {
+            background-color: mix(white, $val, $i * 10);
+        }
+    }
+        
+    // Dark variations
+    @for $i from 1 to 9 {
+        .text-dark-#{$color}-#{$i} {
+            color: mix(black, $val, $i * 10);
+        }
+
+        .bg-dark-#{$color}-#{$i} {
+            background-color: mix(black, $val, $i * 10);
+        }
+    }
+};

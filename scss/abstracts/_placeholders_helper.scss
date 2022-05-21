@@ -1,6 +1,7 @@
-// PLACEHOLDERS FLEX
+/* Placeholders helper */
 
-%flex--row--center {
+// Flex
+%flex-row-center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,7 +13,7 @@
     align-items: center;
 }
 
-%flex--column--center {
+%flex-column-center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,13 +29,30 @@
     align-items: center;
 }
 
-// PLACEHOLDER ABSOLUTE
-
-%absolute--center {
+// Absolute
+%absolute-center {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+%absolute-center-x {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+%absolute-center-y {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

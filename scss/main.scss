@@ -1,13 +1,10 @@
-// USE ABSTRACTS
-
+/* Use abstract */
 @import
   './abstracts/variables',
   './abstracts/functions',
-  './abstracts/mixins',
-  './abstracts/placeholders',
+  './abstracts/breakpoints',
+  './abstracts/placeholders_helper',
   './abstracts/grid_system';
-
-// USE BASE
 
 @import 
     './base/normalize',
@@ -15,25 +12,21 @@
     './base/typography',
     './base/animations';
 
-// USE COMPONENTS
-
 @import 
     './components/buttons';
 
-// USE LAYOUTS
-
 @import
+    './layout/utilities',
     './layout/header',
     './layout/grid',
     './layout/forms',
     './layout/footer';
 
-// USE PAGES
-
 @import 
-    './pages/home_mobile',
     './pages/home';
 
-// USE THEMES
+@import
+    './themes/colors',
+    './themes/typography';
 
-// VENDORS
+// Vendors
