@@ -1,4 +1,3 @@
-/* Use abstract */
 @import
   './abstracts/variables',
   './abstracts/functions',
@@ -9,16 +8,14 @@
 @import 
     './base/normalize',
     './base/reset',
-    './base/typography',
-    './base/animations';
-
+    './base/typography';
+    
 @import 
     './components/buttons';
 
 @import
     './layout/utilities',
     './layout/header',
-    './layout/grid',
     './layout/forms',
     './layout/footer';
 
@@ -28,5 +25,7 @@
 @import
     './themes/colors',
     './themes/typography';
+
+@import './animations';
 
 // Vendors
