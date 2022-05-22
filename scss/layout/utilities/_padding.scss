@@ -1,0 +1,56 @@
+/* Padding utilities */
+$padding: (
+    '0': 0,
+    '1': 1rem,
+    '2': 2rem,
+    '3': 3rem,
+    '4': 4rem,
+    '5': 5rem,
+    '6': 6rem,
+    '7': 7rem,
+    '8': 8rem,
+    '9': 9rem,
+    '10': 10rem,
+);
+
+@each $pg, $val in $padding {
+    .p-#{$pg} {
+        padding: $val;
+    }
+};
+
+@each $pt, $val in $padding {
+    .pt-#{$pt} {
+        padding-top: $val;
+    }
+};
+
+@each $pr, $val in $padding {
+    .pr-#{$pr} {
+        padding-right: $val;
+    }
+};
+
+@each $pb, $val in $padding {
+    .pb-#{$pb} {
+        padding-bottom: $val;
+    }
+};
+
+@each $pl, $val in $padding {
+    .pl-#{$pl} {
+        padding-left: $val;
+    }
+};
+
+@each $px, $val in $padding {
+    .px-#{$px} {
+        padding: 0 $val;
+    }
+};
+
+@each $py, $val in $padding {
+    .py-#{$py} {
+        padding: $val 0;
+    }
+};

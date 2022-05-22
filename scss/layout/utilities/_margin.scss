@@ -1,0 +1,56 @@
+/* Margin utilities */
+$margin: (
+    '0': 0,
+    '1': 1rem,
+    '2': 2rem,
+    '3': 3rem,
+    '4': 4rem,
+    '5': 5rem,
+    '6': 6rem,
+    '7': 7rem,
+    '8': 8rem,
+    '9': 9rem,
+    '10': 10rem,
+);
+
+@each $mg, $val in $margin {
+    .m-#{$mg} {
+        margin: $val;
+    }
+};
+
+@each $mt, $val in $margin {
+    .mt-#{$mt} {
+        margin-top: $val;
+    }
+};
+
+@each $mr, $val in $margin {
+    .mr-#{$mr} {
+        margin-right: $val;
+    }
+};
+
+@each $mb, $val in $margin {
+    .mb-#{$mb} {
+        margin-bottom: $val;
+    }
+};
+
+@each $ml, $val in $margin {
+    .ml-#{$ml} {
+        margin-left: $val;
+    }
+};
+
+@each $mx, $val in $margin {
+    .mx-#{$mx} {
+        margin: 0 $val;
+    }
+};
+
+@each $my, $val in $margin {
+    .my-#{$my} {
+        margin: $val 0;
+    }
+};

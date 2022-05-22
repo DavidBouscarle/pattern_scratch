@@ -1,0 +1,23 @@
+/* Width utilities */
+// Max width classes
+$width: (
+    '100': 100%,
+    '75': 75%,
+    '60': 60%,
+    '50': 50%,
+    '40': 40%,
+    '25': 25%,
+);
+
+@each $mxw, $val in $width {
+    .mxw-#{$mxw} {
+        max-width: $val;
+    }
+};
+
+// Min width classes
+@each $mnw, $val in $width {
+    .mnw-#{$mnw} {
+        min-width: $val;
+    }
+};

@@ -1,0 +1,39 @@
+.btn {
+    position: relative;
+    padding: 1rem 2rem;
+    transition: 
+        color 250ms ease,
+        background-color 250ms ease;
+}
+
+.btn--sm {
+    padding: 0.75rem 1.5rem;
+}
+
+.btn--lg {
+    padding: 1.5rem 3rem;
+}
+
+.btn--xl {
+    padding: 2.5rem 5rem;
+}
+
+.btn--primary {
+    color: $white;
+    background-color: $black;
+
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
+}
+
+.btn--secondary {
+    color: $black;
+    background-color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: $black;
+    }
+}
